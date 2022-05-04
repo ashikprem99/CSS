@@ -1,0 +1,53 @@
+<style>
+/* INTERNAL CSS */
+
+  /* background colour of the webpage */
+  body{
+    background-color: white;
+      }
+
+  /* div for margin and padding */
+  div{
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    background-color: white;
+    border: 80px white;
+    border-radius: 10px;
+    padding: 30px;  
+    background-color: whitesmoke;
+    
+    }
+  /* h1 for example domain */
+  h1{
+    text-align: left;
+    font-family: ariel ,sans-serif; 
+    }
+  /* h2 for paragraph */
+  h4{
+    font-family: sans-serif;
+    font-weight:lighter;  
+    }
+  /* link for next page */
+  a:link {
+        color: skyblue;
+        text-decoration: none;
+        }
+  /* visited link */
+  a:visited {
+        color: green;
+        text-decoration: none;
+            }
+  /* mouse over link */
+  a:hover{
+      color: orangered;
+      text-decoration: none;
+        }
+  /* selected link */
+  a:active{
+      color: blue;
+      text-decoration: none;
+          } 
+}
+</style>

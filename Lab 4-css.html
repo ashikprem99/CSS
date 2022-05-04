@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>TABLE</title>
+
+	<style>
+	/* backgorund color changes and margin  */
+	body
+	{
+		margin-top: 100px;
+		background-color: white;
+		
+	}	
+
+	/*div for dropdown*/
+	.dropdown
+	{	
+		margin-left: 200px;
+  		display: inline-block;
+  		text-align: left;
+	}
+
+	/* for making the heading changes (DETAILS IN BOLD) */
+	h2.header
+	{
+		display: inline-block;
+		font-weight:lighter;
+		text-align:center;
+		margin-left: 100px;
+	}
+
+	/*fn for search button*/
+	.search
+	{
+  		display: inline-block;
+  		width: 1%;
+  		margin-left: 110px;	
+  		font-size: 10px;
+  		vertical-align: top;
+  	}
+
+	/*declaring table*/
+	table
+	{
+  		border-collapse: collapse;
+  		width: 700px;
+  		margin-left:200px ;
+	}
+
+	/*table border settings*/
+	table, td, th 
+	{
+  		border: 1px solid black;
+  		font-size:15px;
+  		font-weight: lighter;
+	}
+
+	/*table height settings */
+	th
+	{
+  		height: 30px;
+	}
+
+	/*showing 5 out of 5 entries*/
+	h5.footer
+	{
+		display: inline-block;
+		font-weight: lighter;
+		text-align:center;
+		margin-left: 200px;
+	}
+
+	/*previous and next buttons*/
+	a:hover 
+	{
+  		background-color: lightseagreen;
+  		color: black;
+  		text-decoration: none;
+	}
+
+	.previous
+	{
+  		background-color: lightgrey;
+  		color: black;
+  		display: inline-block;
+		font-weight: lighter;
+		text-align:center;
+		text-decoration: none;
+		margin-left: 325px;
+
+	}
+	.next
+	{
+  		background-color: lightgrey;
+  		color: black;
+  		display: inline-block;
+		font-weight: lighter;
+		text-align:center;
+		text-decoration: none;	
+	}
+
+	/*for the 5 page buttons*/
+	.round 
+	{
+		background-color: lightgrey;
+  		color: black;
+  		display: inline-block;
+		font-weight: lighter;
+		text-align:center;
+		text-decoration: none;
+  		border-radius: 50%;
+	}
+	</style>
+</head>
+
+
+<body>
+
+	<!-- dropdown menu -->
+	<div class="dropdown">
+		<form>
+  			<label for="ent">show</label>
+  			<select id="ent" name="ent">
+   				<option value="1">1</option>
+    			<option value="2">2</option>
+    			<option value="3">3</option>
+    			<option value="4">4</option>
+    			<option value="5" selected>5</option>
+  			</select>
+  			<label for="ent">entries</label>
+		</form>
+	</div>
+
+	<!-- Heading -->
+	<h2 class="header"><center>Customer<strong>Details</strong></center></h2>
+
+	<!-- serach button -->
+	<div class="search">
+		<form >
+  				<form class="example" action="action_page.php">
+  				<input type="text" placeholder="Search.." name="search">
+  				<!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+				</form>
+		</form>
+	</div>	
+
+	<br><br>
+	
+	<!-- table details -->
+	<table>
+  		<tr>
+    		<th style="font-weight: bold;"><center>#</center></th>
+    		<th style="font-weight: bold">
+    			<center>Name
+        		<a href="#">
+          			<span class="glyphicon glyphicon-resize-vertical"></span>
+        		</a></center>
+        	</th>
+    		<th style="font-weight: bold"><center>Address</center></th>
+    		<th style="font-weight: bold">
+    			<center>City
+    			<a href="#">
+          			<span class="glyphicon glyphicon-resize-vertical"></span>
+        		</a></center>
+        	</th>
+    		<th style="font-weight: bold"><center>Pincode</center></th>
+    		<th style="font-weight: bold">
+    			<center>Country
+    			<a href="#">
+          			<span class="glyphicon glyphicon-resize-vertical"></span>
+        		</a></center>
+        	</th>
+    		<th style="font-weight: bold"><center>Actions</center></th>
+  		</tr>
+
+  		<!-- entry 1 -->
+  		<tr>
+    		<th>1</th>
+    		<th>Thomas</th>
+    		<th>89 Chiarsco Rd</th>
+    		<th>Portland</th>
+    		<th>91219</th>
+    		<th>USA</th>
+    		<th>&nbsp&nbsp
+        		<a href="#">
+          			<span class="glyphicon glyphicon-eye-open"; style= "color: deepskyblue;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-pencil"; style= "color: yellow;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-trash"; style= "color: red";></span>
+        		</a>
+        	</th>
+  		</tr>
+
+  		<!-- entry 2 -->
+  		<tr>
+    		<th>2</th>
+    		<th>Maria</th>
+    		<th>Obere Str</th>
+    		<th>Berlin</th>
+    		<th>12209</th>
+    		<th>Germany</th>
+    		<th>&nbsp&nbsp
+    			<a href="#">
+          			<span class="glyphicon glyphicon-eye-open"; style= "color: deepskyblue;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-pencil"; style= "color: yellow;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-trash"; style= "color: red";></span>
+        		</a>
+    		</th>
+    	</tr>
+
+    	 <!-- entry 3 -->
+  		<tr>
+    		<th>3</th>
+   			<th>Fran</th>
+    		<th>C/Araquil</th>
+    		<th>Madrid</th>
+   	 		<th>28023</th>
+    		<th>Spain</th>
+    		<th>&nbsp&nbsp
+    			<a href="#">
+          			<span class="glyphicon glyphicon-eye-open"; style= "color: deepskyblue;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-pencil"; style= "color: yellow;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-trash"; style= "color: red";></span>
+        		</a>
+    		</th>
+  		</tr>
+  		<!-- entry 4 -->
+  		<tr>
+    		<th>4</th>
+    		<th>Dominie</th>
+    		<th>25,RUE</th>
+    		<th>Paris</th>
+    		<th>75016</th>
+    		<th>France</th>
+    		<th>&nbsp&nbsp
+    		<a href="#">
+          			<span class="glyphicon glyphicon-eye-open"; style= "color: deepskyblue;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-pencil"; style= "color: yellow;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-trash"; style= "color: red";></span>
+        		</a>
+    		</th>
+  		</tr>
+  		<!-- entry 5 -->
+  		<tr>
+    		<th>5</th>
+    		<th>Martin</th>
+    		<th>Via Monte</th>
+    		<th>Turin</th>
+    		<th>10100</th>
+   		 	<th>Italy</th>
+    		<th>&nbsp&nbsp
+    		<a href="#">
+          			<span class="glyphicon glyphicon-eye-open"; style= "color: deepskyblue;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-pencil"; style= "color: yellow;"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-trash"; style= "color: red";></span>
+        		</a>
+    		</th>
+  		</tr>
+
+  	</tr>
+  	</table>
+
+  	<h5 class="footer">Showing <strong>5</strong> out of <strong>25</strong> entries</h5>
+  	<a href="#" class="previous">&nbspPrevious&nbsp</a>
+  	<a href="#" class="round">&nbsp1&nbsp</a>
+  	<a href="#" class="round">&nbsp2&nbsp</a>
+  	<a href="#" class="round"; style="background-color: lightblue;"; >&nbsp3&nbsp</a>
+  	<a href="#" class="round">&nbsp4&nbsp</a>
+  	<a href="#" class="round">&nbsp5&nbsp</a>
+	<a href="#" class="next">&nbspNext&nbsp</a>
+
+
+
+
+
+
+</body>
+</html>
